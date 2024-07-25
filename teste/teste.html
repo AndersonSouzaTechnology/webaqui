@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de Contato</h2>
+        <form action="processa_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; background-color: #333; color: greenyellow;}
+        .content{display: flex; justify-content: center;}
+        .contato{width: 100%; max-width: 500px;}
+        .form{display: flex; flex-direction: column; color: #333;}
+        body{font-family: Arial, Helvetica, sans-serif}
+        body{font-family: Arial, Helvetica, sans-serif}
+        .field{padding: 10px; margin-bottom: 15px; border: 1px solid; border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;}
+        textarea{height: 150px;}
+        input, textarea{
+            background-color: #333;
+            color: greenyellow;
+        }
+        .enviar{color: greenyellow; padding: 10px; border: 1px solid; transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;}
+        .enviar:hover{transform: scale(1.1)}
+        ::-webkit-input-placeholder {
+            color: greenyellow;
+            font: 12px verdana, arial, sans-serif;
+        }       
+    </style>    
+</head>
+<body>
+    
+    <section class="content">
+        <div class="contato">
+            <h3>Formulário de contato</h3>
+            <form class="form" method="post" action="email.php">
+                <input class="field" name="name" placeholder="Nome">
+                <textarea class="field" name="message" placeholder="Digite sua mensagem aqui"></textarea>
+                <input class="field" name="email" placeholder="E-mail">
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
